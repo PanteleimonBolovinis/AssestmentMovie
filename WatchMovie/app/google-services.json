@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "523391541978",
+    "project_id": "movieexplorer-117d8",
+    "storage_bucket": "movieexplorer-117d8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:523391541978:android:c90a293682139e12863be3",
+        "android_client_info": {
+          "package_name": "com.movieexplorer.mobileapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2iwZEqPjgYbcP0V8tV3J8ew3cVtE6GzE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

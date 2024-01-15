@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <TextView
+        android:id="@+id/signupLogo_TV_Id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Create User"
+        android:textSize="50dp"
+        android:layout_marginTop="80dp"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif"/>
+
+    <EditText
+        android:id="@+id/emailname_ET_Id"
+        android:layout_centerHorizontal="true"
+        android:ems="13"
+        android:layout_centerInParent="true"
+        android:hint="Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/password_ET_Id"
+        android:layout_below="@id/emailname_ET_Id"
+        android:layout_centerHorizontal="true"
+        android:ems="13"
+        android:layout_marginTop="20dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/registerUser_B_Id"
+        android:layout_below="@id/password_ET_Id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="Register"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Already a User? Go to Login Page"/>
+
+        <ImageButton
+            android:id="@+id/loginPage_IB_Id"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@color/white"
+            android:src="@drawable/baseline_arrow_forward_24"/>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/movieItem_RL_Id">
+
+    <!-- Add the top-left icons here -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="5dp"
+        android:paddingEnd="5dp"
+        android:paddingStart="5dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="14dp">
+
+            <ImageView
+                android:id="@+id/moviePoster"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+
+                android:contentDescription="movie_thumbnail_description" />
+
+            <!-- Other Movie Details (e.g., Release Year, Genre, etc.) -->
+            <!-- Add additional TextViews or other UI elements as needed -->
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/movieTitle"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/moviePoster"
+            android:padding="8dp"
+            android:maxLines="3"
+            android:text="Movie Title"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/topIconsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <!-- 18+ Icon -->
+        <ImageView
+            android:id="@+id/icon18plus"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/adult_icon"
+            android:contentDescription="18_plus_icon" />
+
+        <!-- Language Icon (assuming "en" is for English) -->
+        <TextView
+            android:id="@+id/iconLanguage"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:text="en"
+            android:padding="2dp"
+            android:textColor="@color/white"
+            android:background="#88565656"
+            android:maxLines="3"
+            android:contentDescription="language_icon_en" />
+    </LinearLayout>
+
+<!--    -->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        android:paddingTop="5dp"-->
+<!--        android:paddingEnd="5dp"-->
+<!--        android:paddingStart="5dp"-->
+<!--        android:layout_below="@id/topIconsLayout">-->
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            app:cardCornerRadius="14dp">-->
+
+<!--            &lt;!&ndash; Existing Movie Poster ImageView and Details &ndash;&gt;-->
+
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/movieTitle"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/moviePoster"-->
+<!--            android:padding="8dp"-->
+<!--            android:text="Movie Title"-->
+<!--            android:textSize="16sp"-->
+<!--            android:textColor="@android:color/black"-->
+<!--            android:gravity="center"/>-->
+<!--    </LinearLayout>-->
+
+</RelativeLayout>
+
